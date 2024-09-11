@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+        h1, h2, h3 {
+            color: #39ff14; /* Neon Green */
+        }
+        h1 {
+            font-size: 26px;
+            border-bottom: 2px solid #39ff14;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 20px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #39ff14;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Compliance Checklist</h1>
+        
+        <div>
+            <h2>Identity and Access Management (IAM)</h2>
+            <ul>
+                <li>Implement least privilege access controls and review IAM policies regularly.</li>
+                <li>Enable multi-factor authentication (MFA) for all IAM users.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Data Encryption</h2>
+            <ul>
+                <li>Use AWS Key Management Service (KMS) for encrypting data at rest.</li>
+                <li>Ensure data in transit is encrypted using TLS.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Security Groups</h2>
+            <ul>
+                <li>Configure security groups to restrict inbound and outbound traffic.</li>
+                <li>Regularly review and update security group rules.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Logging and Monitoring</h2>
+            <ul>
+                <li>Enable AWS CloudTrail for logging API calls.</li>
+                <li>Use AWS CloudWatch for monitoring metrics and logs.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Backup and Recovery</h2>
+            <ul>
+                <li>Ensure regular backups using AWS Backup or other services.</li>
+                <li>Test backup recovery procedures regularly.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Compliance and Audits</h2>
+            <ul>
+                <li>Review AWS compliance reports regularly.</li>
+                <li>Perform internal audits to ensure adherence to standards.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Incident Response</h2>
+            <ul>
+                <li>Develop and test incident response plans.</li>
+                <li>Utilize AWS Config and AWS Security Hub for incident management.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

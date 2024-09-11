@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Security Governance Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">CloudGuard</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#iso">ISO/IEC 27001:2022</a></li>
+                <li><a href="#policies">Policies</a></li>
+                <li><a href="#risk">Risk Management</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#incident">Incident Response</a></li>
+                <li><a href="#audit">Audit & Monitoring</a></li>
+                <li><a href="#implementation">Implementation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Cloud Security Governance Toolkit</h1>
+            <p>Empowering robust cloud security governance aligned with industry best practices and regulatory requirements.</p>
+            <a href="#introduction" class="btn">Get Started</a>
+            <a href="#learn-more" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="introduction" class="intro">
+        <div class="intro-content">
+            <h2>Introduction</h2>
+            <div class="intro-details">
+                <h3>Purpose</h3>
+                <p>CloudGuard is crafted to empower organizations with a robust framework for managing cloud security effectively. It provides essential resources for aligning with ISO/IEC 27001:2022, developing cloud-specific policies, and ensuring compliance with regulations like GDPR and HIPAA. By offering practical implementation guidance, customizable templates, and detailed compliance checklists, the toolkit aims to support IT security teams and compliance officers in maintaining a secure and compliant cloud environment. Its comprehensive approach helps streamline security governance, risk management, and incident response in diverse cloud settings.</p>
+                <h3>Scope</h3>
+                <p>The Cloud Security Governance Toolkit is designed to address a wide range of cloud security needs, focusing on aligning with the ISO/IEC 27001:2022 standard. It encompasses various aspects of cloud security governance, including the development of cloud-specific policies, procedures, and templates. The toolkit provides detailed guidance on compliance with major regulations such as GDPR and HIPAA, and includes tailored checklists and risk management tools specific to popular cloud service providers like AWS, Azure, and IBM Cloud. Its scope extends to offering practical implementation steps and real-world examples to ensure comprehensive coverage and adaptability to different cloud environments and organizational contexts.</p>
+                <h3>Audience</h3>
+                <p>Intended for IT security teams, compliance officers, and cloud administrators.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="iso" class="iso">
+        <div class="iso-content">
+            <h2>Alignment with ISO/IEC 27001:2022</h2>
+            <div class="iso-details">
+                <h3>Overview</h3>
+                <p>ISO/IEC 27001:2022 is a globally recognized standard designed to establish, implement, maintain, and continually improve an Information Security Management System (ISMS). It offers a structured framework to ensure the confidentiality, integrity, and availability of sensitive information. This standard helps organizations manage and protect their information assets through a comprehensive set of controls and processes. By adhering to ISO/IEC 27001:2022, organizations can systematically address information security risks and demonstrate their commitment to maintaining high standards of data security and regulatory compliance.</p>
+                <h3>Mapping of Controls</h3>
+                <p>This toolkit maps components to relevant ISO/IEC 27001:2022 clauses to ensure compliance.</p>
+            </div>
+        </div>
+        <div class="iso-mapping">
+            <h3>Mapping of Toolkit Components to ISO/IEC 27001:2022 Clauses</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Toolkit Component</th>
+                        <th>ISO/IEC 27001:2022 Clause</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction</td>
+                        <td>Clause 4.1 - Understanding the organization and its context</td>
+                        <td>Clarifies the purpose, scope, and audience of the toolkit to align with organizational needs.</td>
+                    </tr>
+                    <tr>
+                        <td>Security Policies and Standards</td>
+                        <td>Clause 5.2 - Information security policy</td>
+                        <td>Provides guidelines and templates for developing access control, data protection, and incident management policies.</td>
+                    </tr>
+                    <tr>
+                        <td>Risk Management</td>
+                        <td>Clause 6.1 - Actions to address risks and opportunities</td>
+                        <td>Includes risk assessment and treatment processes, and templates for identifying and mitigating risks.</td>
+                    </tr>
+                    <tr>
+                        <td>Compliance Checklists</td>
+                        <td>Clause 7.5 - Documented information</td>
+                        <td>Offers detailed checklists for compliance with regulations such as GDPR, HIPAA, and cloud-specific standards.</td>
+                    </tr>
+                    <tr>
+                        <td>Incident Response Plan</td>
+                        <td>Clause 8.3 - Information security risk treatment</td>
+                        <td>Details the procedures for handling incidents, including roles, responsibilities, and reporting.</td>
+                    </tr>
+                    <tr>
+                        <td>Audit and Monitoring</td>
+                        <td>Clause 9.1 - Monitoring, measurement, analysis, and evaluation</td>
+                        <td>Includes audit procedures and continuous monitoring guidelines to ensure ongoing security and compliance.</td>
+                    </tr>
+                    <tr>
+                        <td>Implementation Guidance</td>
+                        <td>Clause 10.2 - Nonconformity and corrective action</td>
+                        <td>Provides step-by-step implementation guides, best practices, and real-world examples for effective deployment of security controls.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+
+    <section id="policies" class="policies">
+        <div class="policies-content">
+            <h2>Security Policies and Standards</h2>
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'AccessControl')">Access Control Policy</button>
+                <button class="tablink" onclick="openTab(event, 'DataProtection')">Data Protection Policy</button>
+                <button class="tablink" onclick="openTab(event, 'IncidentManagement')">Incident Management Policy</button>
+            </div>
+
+            <div id="AccessControl" class="tabcontent">
+                <h3>Access Control Policy</h3>
+                <p>The Access Control Policy defines the rules and procedures for managing who can access organizational information and systems. It ensures that only authorized users have access to sensitive data based on their roles and responsibilities. The policy includes guidelines for user authentication, authorization levels, and regular access reviews to protect against unauthorized access and data breaches.</p>
+                <a href="access-control-policy.html" class="btn">View Policy Template</a>
+            </div>
+
+            <div id="DataProtection" class="tabcontent">
+                <h3>Data Protection Policy</h3>
+                <p>The Data Protection Policy establishes guidelines to ensure the privacy and protection of sensitive and personal data within the organization. It aims to safeguard data from unauthorized access, loss, or misuse while complying with relevant data protection regulations such as GDPR and HIPAA. The policy outlines measures for secure data handling, storage, and transmission, and defines roles and responsibilities to uphold data integrity and confidentiality.</p>
+                <a href="data-protection-policy.html" class="btn">View Policy Template</a>
+            </div>
+
+            <div id="IncidentManagement" class="tabcontent">
+                <h3>Incident Management Policy</h3>
+                <p>The Incident Management Policy outlines the structured procedures for handling and responding to security incidents within the organization. It provides a comprehensive approach to identifying, analyzing, and mitigating security breaches or threats to minimize impact and ensure rapid recovery. This policy includes the steps for incident detection, reporting, containment, eradication, and recovery, along with defined roles and responsibilities for incident response teams. It also emphasizes the importance of maintaining detailed records and conducting post-incident reviews to improve future responses and strengthen overall security posture.</p>
+                <a href="incident-management-policy.html" class="btn">View Policy Template</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="risk" class="risk">
+        <div class="risk-content">
+            <h2>Risk Management</h2>
+            <div class="risk-details">
+                <h3>Risk Assessment Process</h3>
+                <p>Guidelines for assessing and managing risks in cloud environments.</p>
+                <p>The Risk Assessment Process is a systematic approach to identifying, evaluating, and managing risks associated with cloud environments. It aims to safeguard organizational assets by providing a framework to anticipate potential threats, evaluate their impact, and implement appropriate controls to mitigate those risks.</p>
+                <h3>Risk Assessment Template</h3>
+                <p>Structured format for identifying and assessing risks.</p>
+                <a href="risk-assessment-template.html" class="btn">View Policy Template</a>
+                <h3>Risk Treatment Plan</h3>
+                <p>Template and guidelines for mitigating identified risks.</p>
+                <a href="risk-treatment-plan.html" class="btn">View Policy Template</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="compliance" class="compliance">
+        <div class="compliance-content">
+            <h2>Compliance Checklists</h2>
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'GDPR')">GDPR Compliance Checklist</button>
+                <button class="tablink" onclick="openTab(event, 'HIPAA')">HIPAA Compliance Checklist</button>
+                <button class="tablink" onclick="openTab(event, 'CloudProvider')">Cloud Provider-Specific Checklists</button>
+            </div>
+
+            <div id="GDPR" class="tabcontent">
+                <h3>GDPR Compliance Checklist</h3>
+                <p>Detailed list of requirements and checks for GDPR compliance.</p>
+                <a href="gdpr-compliance.html" class="btn">View Policy Template</a>
+            </div>
+
+            <div id="HIPAA" class="tabcontent">
+                <h3>HIPAA Compliance Checklist</h3>
+                <p>Detailed list of requirements and checks for HIPAA compliance.</p>
+                <a href="hipaa-compliance.html" class="btn">View Policy Template</a>
+            </div>
+
+            <div id="CloudProvider" class="tabcontent">
+                <h3>Cloud Provider-Specific Checklists</h3>
+                <p>Checklists tailored for AWS, Azure, and IBM Cloud.</p>
+                <a href="aws-specific.html" class="btn">AWS Policy Template</a>
+                <a href="azure-specific.html" class="btn">Azure Policy Template</a>
+                <a href="IBM-specific.html" class="btn">IBM Policy Template</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="incident" class="incident">
+        <div class="incident-content">
+            <h2>Incident Response Plan</h2>
+            <div class="incident-details">
+                <h3>Incident Response Framework</h3>
+                <p>The Incident Response Framework provides a structured approach for managing and mitigating security incidents. It includes:</p>
+                <ul>
+                    <li><strong>Identification:</strong> Detect and acknowledge the occurrence of an incident. This involves monitoring for unusual activities and analyzing alerts to confirm potential incidents.</li>
+                    <li><strong>Containment:</strong> Implement measures to limit the impact of the incident. This may include isolating affected systems, restricting access, and preventing the spread of the incident.</li>
+                    <li><strong>Eradication:</strong> Remove the root cause of the incident. This involves eliminating malware, closing vulnerabilities, and ensuring that the threat is completely addressed.</li>
+                    <li><strong>Recovery:</strong> Restore affected systems and services to normal operation. This includes validating the integrity of systems, restoring data from backups, and resuming regular business activities.</li>
+                    <li><strong>Lessons Learned:</strong> Review the incident to understand what went wrong and what improvements can be made. Document findings and update the incident response plan accordingly.</li>
+                </ul>
+    
+                <h3>Roles and Responsibilities</h3>
+                <p>Clear definition of roles and responsibilities is crucial for an effective incident response:</p>
+                <ul>
+                    <li><strong>Incident Response Manager:</strong> Oversees the incident response process, coordinates actions, and ensures that the response plan is executed.</li>
+                    <li><strong>Security Analyst:</strong> Analyzes security incidents, investigates potential threats, and provides technical expertise to mitigate the impact.</li>
+                    <li><strong>Communications Officer:</strong> Manages internal and external communications, including notifying stakeholders and handling media inquiries.</li>
+                    <li><strong>IT Support:</strong> Assists with technical aspects such as system restoration, applying patches, and implementing containment measures.</li>
+                    <li><strong>Compliance Officer:</strong> Ensures that the response complies with legal and regulatory requirements and manages documentation and reporting obligations.</li>
+                </ul>
+    
+                <h3>Incident Reporting Form</h3>
+                <p>The Incident Reporting Form is essential for documenting incidents in detail. The form should include:</p>
+                <ul>
+                    <li><strong>Incident Description:</strong> Detailed account of the incident, including the date, time, and affected systems.</li>
+                    <li><strong>Incident Classification:</strong> Categorization of the incident based on its type (e.g., data breach, malware attack).</li>
+                    <li><strong>Impact Assessment:</strong> Evaluation of the impact on business operations and data integrity.</li>
+                    <li><strong>Actions Taken:</strong> Documentation of all steps taken to address the incident, including containment and recovery measures.</li>
+                    <li><strong>Root Cause Analysis:</strong> Identification of the underlying cause and contributing factors of the incident.</li>
+                    <li><strong>Follow-Up Actions:</strong> Documentation of any additional measures required to prevent recurrence and improve response procedures.</li>
+                </ul>
+                <a href="incident-reporting.html" class="btn">Incident Reporting Template</a>
+    
+                <h3>Drill Procedures</h3>
+                <p>Conducting incident response drills helps ensure preparedness. Follow these guidelines:</p>
+                <ul>
+                    <li><strong>Planning:</strong> Set clear objectives for the drill, such as testing specific procedures or improving team coordination.</li>
+                    <li><strong>Scenario Development:</strong> Create realistic scenarios that simulate potential incidents relevant to your organization’s risks.</li>
+                    <li><strong>Execution:</strong> Perform the drill with all relevant participants, simulating the incident and following response procedures.</li>
+                    <li><strong>Evaluation:</strong> Assess the performance of the response team, identify strengths and weaknesses, and gather feedback.</li>
+                    <li><strong>Documentation:</strong> Record the results of the drill, including any issues encountered and recommendations for improvement.</li>
+                    <li><strong>Follow-Up:</strong> Review and update the incident response plan based on drill findings to address any identified gaps.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="audit" class="audit">
+        <div class="audit-content">
+            <h2>Audit and Monitoring</h2>
+            <div class="audit-details">
+                <h3>Security Audit Checklist</h3>
+                <p>Comprehensive checklist for performing security audits.</p>
+                <a href="audit-checklist.html" class="btn">Audit Checklist</a>
+                
+                <h3>Continuous Monitoring Guidelines</h3>
+                <p>Best practices for monitoring cloud environments:</p>
+                <ul>
+                    <li><strong>Implement Real-Time Monitoring:</strong> Utilize tools that provide real-time visibility into the security status of your cloud environment. This allows for immediate detection and response to potential threats.</li>
+                    <li><strong>Establish Baselines:</strong> Define normal operational parameters for your cloud environment. Baseline measurements help in identifying deviations that might indicate security issues or performance problems.</li>
+                    <li><strong>Regularly Review Logs:</strong> Continuously review and analyze logs generated by cloud services and applications. Look for unusual activities or patterns that could signify a security incident.</li>
+                    <li><strong>Automate Alerts:</strong> Set up automated alerts for critical security events and thresholds. This ensures prompt notifications and responses to potential security breaches or system anomalies.</li>
+                    <li><strong>Update Monitoring Tools:</strong> Keep your monitoring tools and processes updated to adapt to evolving threats and technological advancements. Regular updates ensure that your monitoring capabilities remain effective and relevant.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="implementation" class="implementation">
+        <div class="implementation-content">
+            <h2>Implementation Guidance</h2>
+            <div class="implementation-details">
+                <h3>Step-by-Step Guides</h3>
+                <p>Detailed instructions for implementing each toolkit component:</p>
+                <ul>
+                    <li><strong>Introduction:</strong> Begin by understanding the scope and objectives of the toolkit. Familiarize yourself with the specific components and their purposes to ensure a clear implementation path.</li>
+                    <li><strong>Alignment with ISO/IEC 27001:2022:</strong> Follow guidelines to align the toolkit with ISO/IEC 27001:2022 standards. This includes mapping controls and ensuring compliance with the standard's requirements.</li>
+                    <li><strong>Security Policies and Standards:</strong> Implement the security policies and standards as outlined in the toolkit. Ensure that these are tailored to your organization's specific needs and are integrated into your existing policy framework.</li>
+                    <li><strong>Risk Management:</strong> Utilize the risk assessment tools provided to identify and evaluate risks. Develop and implement risk treatment plans based on the identified risks and their potential impact on the organization.</li>
+                    <li><strong>Compliance Checklists:</strong> Use the compliance checklists to verify that all relevant regulations and standards are being met. Update the checklists as necessary to reflect any changes in regulatory requirements or organizational policies.</li>
+                    <li><strong>Incident Response Plan:</strong> Develop and implement the incident response plan according to the guidelines. This should include procedures for detecting, reporting, and managing security incidents.</li>
+                    <li><strong>Audit and Monitoring:</strong> Set up the mechanisms for ongoing audit and monitoring as described in the toolkit. Regularly review and adjust these processes to ensure continuous compliance and effective risk management.</li>
+                    <li><strong>Implementation Guidance:</strong> Follow the practical implementation steps provided in the toolkit. These steps should include resource allocation, timeline development, and responsibility assignment for each component of the toolkit.</li>
+                </ul>
+                
+                <h3>Examples</h3>
+                <p>Sample completed templates and documents to guide the implementation process:</p>
+                <ul>
+                    <li><strong>Sample Risk Assessment Report:</strong> View a completed risk assessment report to understand the format and level of detail required. This example can serve as a reference for documenting your own risk assessments.</li>
+                    <li><strong>Completed Compliance Checklist:</strong> Review a sample compliance checklist to see how to record and track compliance with various regulations. This example helps ensure that all required fields are completed accurately.</li>
+                    <li><strong>Incident Response Plan Template:</strong> Examine a filled-out incident response plan to learn how to structure and detail your own plan. This example includes typical sections and content for an effective incident response strategy.</li>
+                    <li><strong>Audit Report Example:</strong> Check out a sample audit report to see how audit findings and recommendations are documented. This example provides a template for summarizing audit results and actions taken.</li>
+                    <li><strong>Security Policy Document:</strong> Explore a completed security policy document to understand how to draft comprehensive policies. This sample includes typical policy elements and formatting tips.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <form action="contact-form-handler.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cloud Security Governance Toolkit. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
